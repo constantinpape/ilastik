@@ -208,8 +208,8 @@ class AnnotationsGui(LayerViewerGui):
         self._currentCrop = -1
         self._currentCropName = ""
 
-        super(AnnotationsGui, self).__init__(parentApplet, topLevelOperatorView)
-        
+        super(AnnotationsGui, self).__init__(parentApplet, topLevelOperatorView, editable=False)
+
         self.mainOperator = topLevelOperatorView
         
         self.applet = self.mainOperator.parent.parent.annotationsApplet
